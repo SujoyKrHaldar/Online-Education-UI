@@ -14,17 +14,23 @@ function Courses() {
             </h2>
 
             <Link href="/">
-              <a className="px-6 py-3 bg-white inline-block">
+              <a className="hidden px-6 py-3 bg-green-500 text-white sm:inline-block">
                 View all courses.
               </a>
             </Link>
           </div>
 
-          <div className="grid grid-cols-4 gap-4 mt-8">
+          <div className="flex items-start justify-between flex-wrap gap-4 mt-8">
             {courses.map((data, index) => (
               <CourseCard key={index} data={data} />
             ))}
           </div>
+
+          <Link href="/">
+            <a className="inline-block sm:hidden px-6 py-3 bg-green-500 text-white mt-4">
+              View all courses.
+            </a>
+          </Link>
         </Container>
       </div>
     </>

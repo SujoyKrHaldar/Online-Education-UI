@@ -4,7 +4,7 @@ import BackgroundImage from "../others/BackgroundImage";
 function CourseCard({ data }) {
   return (
     <>
-      <div className="p-2 bg-white h-fit">
+      <div className="flex-[1_1_225px] group p-2 bg-white h-fit border-2 border-green-700 sm:border-transparent hover:border-green-700">
         <p
           className={`text-black ${
             data.tag_col || "bg-white"
@@ -14,16 +14,23 @@ function CourseCard({ data }) {
           {data.tag}
         </p>
 
-        <div className="bg-black w-full h-[150px]">
+        <div className="bg-black w-full h-[130px] md:h-[150px]">
           {data?.thumbnail && (
-            <BackgroundImage src={data.thumbnail} alt={data.name} />
+            <BackgroundImage
+              src={data.thumbnail}
+              alt={data.name}
+              className="group-hover:scale-105"
+            />
           )}
         </div>
         <div className="p-4">
-          <p className="mb-1">
-            <span>{data.lessions} lessions</span> | <span>{data.span}</span>
+          <p className="mb-1 text-sm flex items-center justify-between gap-1">
+            <span>{data.lessions} Lessions</span>
+            <span>{data.span}</span>
           </p>
-          <p className="font-bold mb-1 text-lg ">{data.name}</p>
+          <p className="font-bold mb-1 text-lg group-hover:text-green-700">
+            {data.name}
+          </p>
           <p className="text-[#a4a4a4] text-sm mb-1">
             by <i className="font-medium">{data.author}</i>
           </p>
@@ -33,8 +40,9 @@ function CourseCard({ data }) {
         </div>
         <Link href="#">
           <a
-            className=" text-sm mb-1 px-5 py-2 hover:bg-[#f4f4f4] border-l-[1px] 
-          border-l-black block -translate-x-2"
+            className=" text-sm mb-1 px-5 py-2 font-medium sm:text-green-500 sm:bg-white
+             hover:bg-green-500 hover:text-white border-l-2 
+          border-l-green-500 hover:border-l-green-700 block bg-green-500 text-white sm:translate-x-[-10px]"
           >
             View course
           </a>

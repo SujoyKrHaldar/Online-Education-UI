@@ -21,11 +21,6 @@ const navLinks = [
   },
 
   {
-    link: "Courses",
-    url: "/",
-  },
-
-  {
     link: "Pricing",
     url: "/",
   },
@@ -39,13 +34,12 @@ function Navbar() {
   };
   return (
     <>
-      <div className="absolute bg-white w-full top-0 z-[10] border-b-[1px] border-[#0000001a]">
+      <div className="fixed bg-white w-full top-0  py-2 z-50 shadow-md md:shadow-none">
         <div className="container flex items-center justify-between gap-4 ">
           <div className="flex items-center justify-start gap-8">
             <Link href="/">
               <div className="cursor-pointer py-4 flex flex-col items-start gap-0">
                 <p className="font-bold text-lg">Education</p>
-                <p>Online</p>
               </div>
             </Link>
 
@@ -54,17 +48,20 @@ function Navbar() {
 
           <div className="flex items-center justify-between gap-2">
             <Link href="#">
-              <a className="px-5 py-2 hover:bg-slate-200 ">Log in</a>
+              <a className="text-sm hidden lg:block px-5 py-2 hover:bg-green-300 rounded-md">
+                Log in
+              </a>
             </Link>
 
             <Link href="#">
-              <a className="px-5 py-2 bg-slate-200 hover:bg-slate-500 hover:text-white">
+              <a className="text-sm font-medium px-5 py-2 bg-green-500 hover:bg-green-800 text-white rounded-md">
                 Get started
               </a>
             </Link>
+
             <div
               onClick={openModel}
-              className="md:hidden flex text-3xl cursor-pointer"
+              className="md:hidden flex text-3xl cursor-pointer ml-4"
             >
               <FiMenu />
             </div>
