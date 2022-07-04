@@ -1,10 +1,11 @@
 import Head from "next/head";
-import Categories from "../components/home/categories";
-import Contact from "../components/home/Contact";
+import Category from "../components/home/Category";
+// import Contact from "../components/home/Contact";
 import Courses from "../components/home/Courses";
 import Details from "../components/home/Details";
-import Faq from "../components/home/Faq";
-import Features from "../components/home/Features";
+import Join from "../components/home/Join";
+// import Faq from "../components/home/Faq";
+// import Features from "../components/home/Features";
 import Landing from "../components/home/Landing";
 import Layout from "../components/layout/Layout";
 
@@ -19,12 +20,13 @@ export default function Home() {
 
       <Layout>
         <Landing />
+        <Details />
+        <Category />
         {/* <Features /> */}
-        {/* <Details /> */}
-        {/* <Categories /> */}
         <Courses />
         {/* <Faq /> */}
         {/* <Contact /> */}
+        <Join />
       </Layout>
     </>
   );

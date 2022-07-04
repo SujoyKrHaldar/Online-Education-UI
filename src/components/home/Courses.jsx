@@ -6,7 +6,7 @@ import { courses } from "../../data/Courses";
 function Courses() {
   return (
     <>
-      <div id="courses" className="w-full  py-36 bg-slate-100">
+      <div id="courses" className="w-full  py-28 bg-slate-100">
         <Container>
           <div className="flex items-center justify-between gap-4">
             <h2>
