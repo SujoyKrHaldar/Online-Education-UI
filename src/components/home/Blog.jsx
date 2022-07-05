@@ -8,7 +8,13 @@ function Blog() {
     <>
       <div id="blogs" className="w-full py-28">
         <Container>
-          <h2 className="font-bold">Blogs & Articles</h2>
+          <p className="px-3 py-1 mb-2 bg-green-100 inline-block font-bold">
+            Blogs & Articles
+          </p>
+          <h2>
+            Take a look at the{" "}
+            <span className="font-bold">Latest Articles</span>
+          </h2>
 
           <div className="flex items-start justify-between flex-wrap gap-4 mt-8">
             {blogs.map((data, index) => (
@@ -17,7 +23,7 @@ function Blog() {
           </div>
 
           <Link href="/">
-            <a className="inline-block px-6 py-3 bg-green-500 text-white mt-4">
+            <a className="text-sm font-medium px-5 py-2 bg-green-500 hover:bg-green-800 text-white rounded-md">
               View all blogs
             </a>
           </Link>

@@ -4,7 +4,7 @@ import Container from "../layout/Container";
 function Join() {
   return (
     <>
-      <div className="py-6">
+      <div className="py-6 bg-slate-100">
         <div className="w-full absolute -bottom-1 sm:-bottom-8 left-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path

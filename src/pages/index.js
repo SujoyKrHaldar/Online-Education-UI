@@ -5,7 +5,7 @@ import Courses from "../components/home/Courses";
 import Details from "../components/home/Details";
 import Join from "../components/home/Join";
 import Faq from "../components/home/Faq";
-// import Features from "../components/home/Features";
+// import WayOfWork from "../components/home/WayOfWork";
 import Landing from "../components/home/Landing";
 import Layout from "../components/layout/Layout";
 import Blog from "../components/home/Blog";
@@ -21,10 +21,10 @@ export default function Home() {
 
       <Layout>
         <Landing />
-        <Details />
         <Category />
-        {/* <Features /> */}
         <Courses />
+        <Details />
+        {/* <WayOfWork /> */}
         <Blog />
         <Faq />
         {/* <Contact /> */}
