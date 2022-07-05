@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import Logo from "./components/logo/Logo";
 import Navbar_Desktop from "./components/navbar/Navbar_Desktop";
 import Navbar_Mobile from "./components/navbar/Navbar_Mobile";
 
@@ -34,13 +35,11 @@ function Navbar() {
   };
   return (
     <>
-      <div className="fixed bg-white w-full top-0  py-2 z-50 shadow-md md:shadow-none">
+      <div className="fixed bg-white w-full top-0  py-2 z-50 shadow-md ">
         <div className="container flex items-center justify-between gap-4 ">
           <div className="flex items-center justify-start gap-8">
             <Link href="/">
-              <div className="cursor-pointer py-4 flex flex-col items-start gap-0">
-                <p className="font-bold text-lg">Education</p>
-              </div>
+              <Logo />
             </Link>
 
             <Navbar_Desktop navLinks={navLinks} />

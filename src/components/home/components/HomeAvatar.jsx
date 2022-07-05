@@ -20,7 +20,7 @@ const avtar = [
 function HomeAvatar() {
   return (
     <>
-      <div className="max-w-[350px] lg:max-w-[200px]">
+      <div className="hidden sm:block lg:max-w-[200px]">
         <div className="flex -space-x-2 mb-4">
           {avtar.map((dp, index) => (
             <img
@@ -33,7 +33,7 @@ function HomeAvatar() {
         </div>
 
         <p className="text-white text-sm">
-          Over 185,000 peoples join us. We are pleased to welcome you onboard.
+          Join over 500,000 students. We are pleased to welcome you onboard.
         </p>
       </div>
     </>

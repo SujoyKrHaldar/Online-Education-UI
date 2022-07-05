@@ -5,8 +5,8 @@ import Container from "../layout/Container";
 function Category() {
   return (
     <>
-      <div className="w-full  py-16 bg-slate-100 ">
-        <Container className="text-center bg-green-200 py-16 ">
+      <div className="w-full  border-[3rem] border-white">
+        <Container className="text-center rounded-xl  bg-green-200 py-16 ">
           <h2>
             Our <span className="font-bold">Top Courses</span>
           </h2>

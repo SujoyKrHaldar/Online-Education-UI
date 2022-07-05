@@ -4,7 +4,7 @@ import Category from "../components/home/Category";
 import Courses from "../components/home/Courses";
 import Details from "../components/home/Details";
 import Join from "../components/home/Join";
-// import Faq from "../components/home/Faq";
+import Faq from "../components/home/Faq";
 // import Features from "../components/home/Features";
 import Landing from "../components/home/Landing";
 import Layout from "../components/layout/Layout";
@@ -24,7 +24,7 @@ export default function Home() {
         <Category />
         {/* <Features /> */}
         <Courses />
-        {/* <Faq /> */}
+        <Faq />
         {/* <Contact /> */}
         <Join />
       </Layout>
