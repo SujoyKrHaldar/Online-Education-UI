@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CourseCard from "../designs/cards/CourseCard";
 import Container from "../layout/Container";
-import { courses } from "../../data/Courses";
+import { courses } from "../../data/data";
 
 function Courses() {
   return (

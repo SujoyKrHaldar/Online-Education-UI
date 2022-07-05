@@ -8,6 +8,7 @@ import Faq from "../components/home/Faq";
 // import Features from "../components/home/Features";
 import Landing from "../components/home/Landing";
 import Layout from "../components/layout/Layout";
+import Blog from "../components/home/Blog";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Category />
         {/* <Features /> */}
         <Courses />
+        <Blog />
         <Faq />
         {/* <Contact /> */}
         <Join />

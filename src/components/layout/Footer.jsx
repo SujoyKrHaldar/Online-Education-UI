@@ -1,21 +1,14 @@
+import FooterBottom from "./components/footer/FooterBottom";
+import FooterTop from "./components/footer/FooterTop";
 import Container from "./Container";
 
 function Footer() {
   return (
     <>
-      <div className="bg-[#212121] text-[#ffffff] py-6  mt-auto">
-        <Container className="flex items-center justify-between gap-4">
-          <p>Copyright ©{new Date().getFullYear()} - All rights reserved.</p>
-          <p>
-            Created by{" "}
-            <a
-              className="font-bold"
-              href="https://github.com/SujoyKrHaldar"
-              target="_blank"
-            >
-              Sujoy
-            </a>
-          </p>
+      <div className="bg-[#212121] py-6 text-white mt-auto">
+        <Container>
+          <FooterTop />
+          <FooterBottom />
         </Container>
       </div>
     </>

@@ -25,7 +25,7 @@ function HomeAvatar() {
           {avtar.map((dp, index) => (
             <img
               key={index}
-              className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+              className="inline-block h-6 w-6 rounded-full ring-2 ring-green-500"
               src={dp.src}
               alt="Avtar"
             />

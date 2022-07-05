@@ -22,6 +22,11 @@ const navLinks = [
   },
 
   {
+    link: "Blogs",
+    url: "#blogs",
+  },
+
+  {
     link: "Pricing",
     url: "/",
   },
