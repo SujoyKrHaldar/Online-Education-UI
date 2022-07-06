@@ -12,7 +12,7 @@ function Landing() {
           alt="landing page"
           className="opacity-30"
         />
-        <Container className="flex flex-col justify-end gap-4 lg:gap-8 lg:flex-row lg:items-end lg:justify-between lg:pb-8">
+        <Container className="flex items-end justify-between gap-4">
           <HomeContent />
           <HomeAvatar />
         </Container>

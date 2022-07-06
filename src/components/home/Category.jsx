@@ -5,7 +5,7 @@ import Container from "../layout/Container";
 function Category() {
   return (
     <>
-      <div className="w-full py-8 ">
+      <div id="catagory" className="w-full">
         <div className="w-full absolute -bottom-1 h-auto left-0 ">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -15,8 +15,8 @@ function Category() {
             ></path>
           </svg>
         </div>
-        <Container>
-          <div className="sm:text-center rounded-xl bg-green-200 p-16 ">
+        <Container className="bg-green-200 sm:bg-transparent py-28">
+          <div className="lg:text-center rounded-xl bg-transparent sm:bg-green-200 sm:p-16 ">
             <p className="px-3 py-1 mb-2 bg-white inline-block font-bold">
               Category
             </p>
@@ -28,7 +28,7 @@ function Category() {
               subject.
             </p>
 
-            <div className="flex items-start justify-start sm:justify-center flex-wrap gap-4 mt-8">
+            <div className="flex items-start justify-start lg:justify-center flex-wrap gap-4 mt-8">
               {category.map((data, index) => (
                 <CategoryCard data={data} key={index} />
               ))}

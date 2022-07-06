@@ -13,7 +13,7 @@ const navLinks = [
 
   {
     link: "Catalogs",
-    url: "/",
+    url: "#catagory",
   },
 
   {
@@ -24,11 +24,6 @@ const navLinks = [
   {
     link: "Blogs",
     url: "#blogs",
-  },
-
-  {
-    link: "Pricing",
-    url: "/",
   },
 ];
 

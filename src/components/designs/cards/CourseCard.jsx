@@ -4,7 +4,10 @@ import BackgroundImage from "../others/BackgroundImage";
 function CourseCard({ data }) {
   return (
     <>
-      <div className="flex-[1_1_225px] group p-2 bg-white h-fit border-2 border-green-700 sm:border-transparent hover:border-green-700">
+      <div
+        className="flex-[1_1_225px] group p-2 bg-white h-fit border-2 border-green-700 
+      md:border-transparent md:hover:border-green-700"
+      >
         <p
           className={`text-black ${
             data.tag_col || "bg-white"
@@ -40,9 +43,9 @@ function CourseCard({ data }) {
         </div>
         <Link href="#">
           <a
-            className=" text-sm mb-1 px-5 py-2 font-medium sm:text-green-500 sm:bg-white
-             hover:bg-green-500 hover:text-white border-l-2 
-          border-l-green-500 hover:border-l-green-700 block bg-green-500 text-white sm:translate-x-[-10px]"
+            className="text-sm mb-1 px-5 py-2 font-medium block  text-white border-l-2 border-l-green-500 bg-green-500
+             md:text-green-500 md:bg-white md:hover:bg-green-500 md:hover:text-white  hover:border-l-green-700 
+            md:translate-x-[-10px]"
           >
             View course
           </a>

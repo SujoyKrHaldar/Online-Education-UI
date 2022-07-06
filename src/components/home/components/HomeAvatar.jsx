@@ -20,7 +20,7 @@ const avtar = [
 function HomeAvatar() {
   return (
     <>
-      <div className="hidden sm:block lg:max-w-[200px]">
+      <div className="hidden lg:block lg:max-w-[200px]">
         <div className="flex -space-x-2 mb-4">
           {avtar.map((dp, index) => (
             <img

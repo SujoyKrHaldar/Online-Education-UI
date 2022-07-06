@@ -14,7 +14,7 @@ function FooterTop() {
       <div className="py-4 my-4 border-b-[1px] sm:border-t-[1px] sm:border-b-0 border-[#3f3f3f] flex items-center justify-between gap-4 flex-wrap">
         <Logo />
 
-        <div className="flex items-center justify-start gap-4 sm:gap-6 flex-wrap">
+        <div className="flex items-center justify-start gap-4 gap-y-2 sm:gap-6 flex-wrap">
           <p>Courses</p>
           <p>Catagory</p>
           <p>Blogs</p>

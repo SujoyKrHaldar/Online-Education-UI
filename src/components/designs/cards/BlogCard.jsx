@@ -4,7 +4,10 @@ import BackgroundImage from "../others/BackgroundImage";
 function BlogCard({ data }) {
   return (
     <>
-      <div className="flex-[1_1_225px] p-2 bg-slate-100 h-fit border-2 border-transparent hover:border-gray-300 hover:bg-white hover:shadow-md">
+      <div
+        className="flex-[1_1_225px] p-2 h-fit border-2 bg-white border-gray-300 shadow-md
+      md:border-transparent md:bg-slate-100 md:hover:shadow-md md:hover:bg-white md:hover:border-gray-300 "
+      >
         <div className="bg-black w-full h-[130px] md:h-[150px] ">
           {data?.thumbnail && (
             <BackgroundImage
