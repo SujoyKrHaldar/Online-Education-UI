@@ -1,7 +1,11 @@
 import { BiCode, BiMobile } from "react-icons/bi";
-import { MdOutlineComputer, MdAnimation } from "react-icons/md";
+import { FaProjectDiagram } from "react-icons/fa";
+import { BsChatDotsFill, BsSpeedometer2 } from "react-icons/bs";
+import { MdOutlineComputer, MdAnimation, MdWork } from "react-icons/md";
 import { SiAltiumdesigner } from "react-icons/si";
 import { GiMechanicalArm, GiPencilRuler } from "react-icons/gi";
+import { GrCertificate } from "react-icons/gr";
+import { ImPriceTags } from "react-icons/im";
 
 export const category = [
   {
@@ -151,5 +155,60 @@ export const blogs = [
     slug: "",
     author: "ABC xyz",
     createdAT: "2nd may 2020",
+  },
+];
+
+export const howItWorks = [
+  {
+    main: "Learn faster with interactive screencasts",
+    para: "Our interactive screencasts let you edit the code whenever you want, just as if you were pair programming with the teacher. As a result, you will code more and learn faster.",
+  },
+
+  {
+    main: "Get help and support from your peers",
+    para: "Right now, there are over 1.000 Scrimba students online in our community chat. It’s a friendly space where you can ask for help, share your code, get career advice, and meet like-minded people.",
+  },
+
+  {
+    main: "Meet the world’s best coding teachers",
+    para: "We have handpicked the best teachers for each subject, and combined them into one experience.",
+  },
+];
+
+export const quality = [
+  {
+    icons: <FaProjectDiagram />,
+    main: "Project based",
+    para: "Build real products while learning",
+  },
+
+  {
+    icons: <MdWork />,
+    main: "Job focused",
+    para: "Learn industry-relevant skills",
+  },
+
+  {
+    icons: <BsChatDotsFill />,
+    main: "Peer to peer",
+    para: "Get help & support from your peers",
+  },
+
+  {
+    icons: <BsSpeedometer2 />,
+    main: "Self paced",
+    para: "Learn at your own pace",
+  },
+
+  {
+    icons: <GrCertificate />,
+    main: "Certification",
+    para: "Finish the path to get certificate",
+  },
+
+  {
+    icons: <ImPriceTags />,
+    main: "Affordable",
+    para: "1% of the price of a bootcamp",
   },
 ];

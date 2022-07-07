@@ -5,8 +5,8 @@ function BlogCard({ data }) {
   return (
     <>
       <div
-        className="flex-[1_1_225px] p-2 h-fit border-2 bg-white border-gray-300 shadow-md
-      md:border-transparent md:bg-slate-100 md:hover:shadow-md md:hover:bg-white md:hover:border-gray-300 "
+        className="flex-[1_1_225px] group p-2 bg-white h-fit border-2 border-green-700 
+      md:border-transparent md:hover:border-green-700 bg-slate-100"
       >
         <div className="bg-black w-full h-[130px] md:h-[150px] ">
           {data?.thumbnail && (
@@ -23,13 +23,19 @@ function BlogCard({ data }) {
           <p className="text-[#a4a4a4] text-sm mb-1">
             by <i className="font-medium">{data.author}</i>
           </p>
-          <p className="text-[#a4a4a4] text-sm font-medium mb-4">
+          <p className="text-[#a4a4a4] text-sm font-medium ">
             {data.createdAt}
           </p>
-          <Link href={data.slug}>
-            <a className=" text-sm font-bold ">Read more</a>
-          </Link>
         </div>
+        <Link href="#">
+          <a
+            className="text-sm mb-1 px-5 py-2 font-medium block  text-white border-l-2 border-l-green-500 bg-green-500
+             md:text-green-500 md:bg-slate-100 md:hover:bg-green-500 md:hover:text-white  hover:border-l-green-700 
+            md:translate-x-[-10px]"
+          >
+            Read more
+          </a>
+        </Link>
       </div>
     </>
   );

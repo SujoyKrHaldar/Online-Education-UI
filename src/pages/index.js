@@ -5,10 +5,11 @@ import Courses from "../components/home/Courses";
 import Details from "../components/home/Details";
 import Join from "../components/home/Join";
 import Faq from "../components/home/Faq";
-// import WayOfWork from "../components/home/WayOfWork";
+import WayOfWork from "../components/home/WayOfWork";
 import Landing from "../components/home/Landing";
 import Layout from "../components/layout/Layout";
 import Blog from "../components/home/Blog";
+import CourseQualities from "../components/home/CourseQualities";
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
         <Category />
         <Courses />
         <Details />
-        {/* <WayOfWork /> */}
+        <WayOfWork />
+        <CourseQualities />
         <Blog />
         <Faq />
         {/* <Contact /> */}
