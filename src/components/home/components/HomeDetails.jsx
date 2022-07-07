@@ -5,7 +5,7 @@ import { MdPhonelink } from "react-icons/md";
 function HomeDetails() {
   return (
     <>
-      <div className="flex items-start justify-evenly gap-8 py-8 flex-wrap">
+      <div className="flex items-start justify-left sm:justify-evenly gap-8 py-8 flex-wrap">
         <div className="max-w-[200px]">
           <div className="text-xl mb-2  text-white bg-green-500 rounded-full inline-block p-2">
             <BsFillPlayFill />
@@ -32,7 +32,7 @@ function HomeDetails() {
           </div>
           <p>
             Learn at your own pace, with{" "}
-            <span className="font-bold">Lifetime access</span> on
+            <span className="font-bold">Lifetime access</span> on{" "}
             <span className="font-bold">mobile and desktop</span>.
           </p>
         </div>

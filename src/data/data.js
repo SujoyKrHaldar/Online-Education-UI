@@ -161,17 +161,14 @@ export const blogs = [
 export const howItWorks = [
   {
     main: "Learn faster with interactive screencasts",
-    para: "Our interactive screencasts let you edit the code whenever you want, just as if you were pair programming with the teacher. As a result, you will code more and learn faster.",
   },
 
   {
     main: "Get help and support from your peers",
-    para: "Right now, there are over 1.000 Scrimba students online in our community chat. It’s a friendly space where you can ask for help, share your code, get career advice, and meet like-minded people.",
   },
 
   {
     main: "Meet the world’s best coding teachers",
-    para: "We have handpicked the best teachers for each subject, and combined them into one experience.",
   },
 ];
 
