@@ -7,8 +7,9 @@ function Blog() {
   return (
     <>
       <div id="blogs" className="w-full py-28">
+        <div className="absolute w-full max-w-full md:max-w-[900px] h-full top-0  left-0 bg-slate-100 rounded-xl"></div>
         <Container>
-          <p className="px-3 py-1 mb-2 bg-green-100 inline-block font-bold">
+          <p className="px-3 py-1 mb-2 bg-white inline-block font-bold">
             Blogs & Articles
           </p>
           <h2>

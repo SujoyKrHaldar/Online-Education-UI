@@ -15,7 +15,7 @@ function Category() {
             ></path>
           </svg>
         </div>
-        <Container className="bg-green-200 sm:bg-transparent py-28 lg:text-center">
+        <Container className="py-28 sm:text-center">
           <h2>
             Let your <span className="font-bold">Learning Journey</span> begin
           </h2>
@@ -24,7 +24,7 @@ function Category() {
             subject.
           </p>
 
-          <div className="grid grid-cols-4 gap-4 mt-8 max-w-[836px] mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-[836px] mx-auto">
             {category.map((data, index) => (
               <CategoryCard data={data} key={index} />
             ))}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
-import Logo from "./components/logo/Logo";
+import ProductLogo from "./components/logo/ProductLogo";
 import Navbar_Desktop from "./components/navbar/Navbar_Desktop";
 import Navbar_Mobile from "./components/navbar/Navbar_Mobile";
 
@@ -39,7 +39,9 @@ function Navbar() {
         <div className="container flex items-center justify-between gap-4 ">
           <div className="flex items-center justify-start gap-8">
             <Link href="/">
-              <Logo />
+              <div>
+                <ProductLogo />
+              </div>
             </Link>
 
             <Navbar_Desktop navLinks={navLinks} />

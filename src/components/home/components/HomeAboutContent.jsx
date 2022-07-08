@@ -3,7 +3,7 @@ import Link from "next/link";
 function HomeAboutContent() {
   return (
     <>
-      <div className="mx-auto max-w-[450px]">
+      <div className="ml-auto max-w-[450px]">
         <h2 className="mb-2">
           About the{" "}
           <span className="font-bold text-green-500">Online Education</span>

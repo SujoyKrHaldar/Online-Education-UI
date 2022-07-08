@@ -5,9 +5,11 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(null);
 
   const handelSubmit = async (e) => {
     e.preventDefault();
+
     const data = {
       name,
       email,
@@ -15,15 +17,24 @@ function ContactForm() {
       message,
     };
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const msg = await response.json();
+      setSuccess(msg.message);
+    } catch (err) {
+      alert("Something went wrong!");
+    }
 
-    console.log(res);
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
   };
 
   return (
@@ -55,12 +66,14 @@ function ContactForm() {
         />
 
         <textarea
-          className="h-[130px] w-full bg-slate-200 text-gray-900 placeholder:text-gray-400 mb-4 py-3 px-5 rounded-md focus:outline-none focus:shadow-outline"
+          className="h-[130px] w-full bg-slate-200 text-gray-900 placeholder:text-gray-400 mb-2 py-3 px-5 rounded-md focus:outline-none focus:shadow-outline"
           placeholder="Message"
           onChange={(e) => setMessage(e.target.value)}
           value={message}
           required
         />
+
+        {success && <p className="mb-4 text-green-500 text-sm">{success}</p>}
 
         <input
           type="submit"

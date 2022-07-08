@@ -1,6 +1,7 @@
 import { SiSololearn } from "react-icons/si";
+import React from "react";
 
-function Logo() {
+function ProductLogo() {
   return (
     <>
       <div className="cursor-pointer py-4 flex items-center justify-start gap-2">
@@ -18,4 +19,4 @@ function Logo() {
   );
 }
 
-export default Logo;
+export default ProductLogo;

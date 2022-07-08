@@ -6,7 +6,8 @@ import { courses } from "../../data/data";
 function Courses() {
   return (
     <>
-      <div id="courses" className="w-full  py-28 bg-slate-100">
+      <div id="courses" className="w-full py-28 bg-slate-100">
+        <div className="absolute w-full max-w-[900px] h-full top-0 right-0 bg-white rounded-xl hidden md:block"></div>
         <Container>
           <p className="px-3 py-1 mb-2 bg-white inline-block font-bold">
             Our Courses

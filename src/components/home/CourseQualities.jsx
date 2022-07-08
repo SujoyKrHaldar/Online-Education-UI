@@ -5,16 +5,19 @@ import Container from "../layout/Container";
 function CourseQualities() {
   return (
     <>
-      <div className="w-full py-28">
-        <Container className="text-center">
-          <p className=" px-3 py-1 mb-2 bg-slate-100 inline-block font-bold">
+      <div className="w-full py-28 bg-slate-100">
+        <div className="absolute w-full h-1/3 bottom-0 left-0 bg-white"></div>
+        <Container>
+          <p className=" px-3 py-1 mb-2 bg-white inline-block font-bold">
             Quality content
           </p>
-          <h2 className=" mb-4">
-            What we will <span className="font-bold">Offer</span>
+          <h2 className="max-w-md mb-4">
+            We are{" "}
+            <span className="font-bold text-green-500">Quality service</span>{" "}
+            provider with love
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-8">
             {quality.map((data, index) => (
               <ContextQualityCard data={data} key={index} />
             ))}

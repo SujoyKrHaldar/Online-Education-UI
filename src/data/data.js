@@ -1,6 +1,5 @@
 import { IoIosMusicalNotes } from "react-icons/io";
 import { FaProjectDiagram, FaCodeBranch } from "react-icons/fa";
-import { BsChatDotsFill, BsSpeedometer2 } from "react-icons/bs";
 import { MdOutlineComputer, MdAnimation, MdWork } from "react-icons/md";
 import { SiMaterialdesignicons } from "react-icons/si";
 import { GiMechanicalArm, GiPencilRuler } from "react-icons/gi";
@@ -82,6 +81,7 @@ export const courses = [
     updatedAt: "2nd march",
     span: "2hr 30mins",
     lessions: "41",
+    slug: "/",
   },
 
   {
@@ -94,6 +94,7 @@ export const courses = [
     updatedAt: "4nd march",
     span: "8hrs",
     lessions: "75",
+    slug: "/",
   },
 
   {
@@ -106,6 +107,7 @@ export const courses = [
     updatedAt: "15th march",
     span: "13hrs",
     lessions: "106",
+    slug: "/",
   },
 
   {
@@ -118,6 +120,7 @@ export const courses = [
     updatedAt: "3rd march",
     span: "26hrs",
     lessions: "200",
+    slug: "/",
   },
 ];
 
@@ -127,7 +130,7 @@ export const blogs = [
     name: "How techonology evolves",
     thumbnail:
       "https://images.unsplash.com/photo-1644982649363-fae51da44eac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    slug: "",
+    slug: "/",
     author: "ABC xyz",
     createdAT: "2nd march 2020",
   },
@@ -137,7 +140,7 @@ export const blogs = [
     name: "How to learn your favourite subject very fast way.",
     thumbnail:
       "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80",
-    slug: "",
+    slug: "/",
     author: "ABC xyz",
     createdAT: "2nd april 2020",
   },
@@ -147,7 +150,7 @@ export const blogs = [
     name: "How to get best out of all the courses",
     thumbnail:
       "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    slug: "",
+    slug: "/",
     author: "ABC xyz",
     createdAT: "2nd may 2020",
   },
@@ -157,7 +160,7 @@ export const blogs = [
     name: "Will web5.0 kill web3.0 ?",
     thumbnail:
       "https://images.unsplash.com/photo-1639803812104-7fe5161508a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
-    slug: "",
+    slug: "/",
     author: "ABC xyz",
     createdAT: "2nd may 2020",
   },
@@ -188,18 +191,6 @@ export const quality = [
     icons: <MdWork />,
     main: "Job focused",
     para: "Learn industry-relevant skills",
-  },
-
-  {
-    icons: <BsChatDotsFill />,
-    main: "Peer to peer",
-    para: "Get help & support from your peers",
-  },
-
-  {
-    icons: <BsSpeedometer2 />,
-    main: "Self paced",
-    para: "Learn at your own pace",
   },
 
   {
