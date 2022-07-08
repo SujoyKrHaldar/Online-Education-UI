@@ -15,24 +15,19 @@ function Category() {
             ></path>
           </svg>
         </div>
-        <Container className="bg-green-200 sm:bg-transparent py-28">
-          <div className="lg:text-center rounded-xl bg-transparent sm:bg-green-200 sm:p-16 ">
-            <p className="px-3 py-1 mb-2 bg-white inline-block font-bold">
-              Category
-            </p>
-            <h2>
-              Let your <span className="font-bold">Learning Journey</span> begin
-            </h2>
-            <p>
-              Go to the section of your choice to study on any topic on any
-              subject.
-            </p>
+        <Container className="bg-green-200 sm:bg-transparent py-28 lg:text-center">
+          <h2>
+            Let your <span className="font-bold">Learning Journey</span> begin
+          </h2>
+          <p>
+            Go to the section of your choice to study on any topic on any
+            subject.
+          </p>
 
-            <div className="flex items-start justify-start lg:justify-center flex-wrap gap-4 mt-8">
-              {category.map((data, index) => (
-                <CategoryCard data={data} key={index} />
-              ))}
-            </div>
+          <div className="grid grid-cols-4 gap-4 mt-8 max-w-[836px] mx-auto">
+            {category.map((data, index) => (
+              <CategoryCard data={data} key={index} />
+            ))}
           </div>
         </Container>
       </div>

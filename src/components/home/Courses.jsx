@@ -9,7 +9,7 @@ function Courses() {
       <div id="courses" className="w-full  py-28 bg-slate-100">
         <Container>
           <p className="px-3 py-1 mb-2 bg-white inline-block font-bold">
-            Courses
+            Our Courses
           </p>
           <h2>
             Discover <span className="font-bold">Lifelong Learning</span>

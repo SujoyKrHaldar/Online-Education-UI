@@ -1,25 +1,26 @@
-import { BiCode, BiMobile } from "react-icons/bi";
-import { FaProjectDiagram } from "react-icons/fa";
+import { IoIosMusicalNotes } from "react-icons/io";
+import { FaProjectDiagram, FaCodeBranch } from "react-icons/fa";
 import { BsChatDotsFill, BsSpeedometer2 } from "react-icons/bs";
 import { MdOutlineComputer, MdAnimation, MdWork } from "react-icons/md";
-import { SiAltiumdesigner } from "react-icons/si";
+import { SiMaterialdesignicons } from "react-icons/si";
 import { GiMechanicalArm, GiPencilRuler } from "react-icons/gi";
 import { GrCertificate } from "react-icons/gr";
 import { ImPriceTags } from "react-icons/im";
+import { SiPhotobucket } from "react-icons/si";
 
 export const category = [
   {
-    name: "Web development",
-    icons: <BiCode />,
+    name: "Development",
+    icons: <FaCodeBranch />,
   },
 
   {
-    name: "Ui/Ux design",
-    icons: <SiAltiumdesigner />,
+    name: "Design",
+    icons: <SiMaterialdesignicons />,
   },
   {
-    name: "App development",
-    icons: <BiMobile />,
+    name: "Music",
+    icons: <IoIosMusicalNotes />,
   },
 
   {
@@ -40,6 +41,10 @@ export const category = [
   {
     name: "Art and drawing",
     icons: <GiPencilRuler />,
+  },
+  {
+    name: "Photography",
+    icons: <SiPhotobucket />,
   },
 ];
 

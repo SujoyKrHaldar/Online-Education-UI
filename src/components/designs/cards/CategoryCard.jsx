@@ -1,14 +1,11 @@
 function CategoryCard({ data }) {
   return (
     <>
-      <div
-        className="group px-4 py-2 bg-white rounded-lg text-center border-2 border-transparent hover:border-green-500 
-      flex items-center justify-center gap-4"
-      >
-        <div className="p-2 rounded-full text-green-700 border-2 border-transparent group-hover:border-green-500 bg-green-200 text-2xl ">
+      <div className="group py-8 px-4 bg-white rounded-lg text-center border-2 border-transparent hover:border-black shadow-lg">
+        <div className="text-2xl mb-4 text-black flex items-center justify-center">
           {data.icons}
         </div>
-        <p className="font-bold">{data.name}</p>
+        <p>{data.name}</p>
       </div>
     </>
   );
